@@ -1,0 +1,23 @@
+
+
+Multithreading is implemented in Linux userspace by the pthread
+library.
+
+Problem Statements:
+
+Write an application that has multiple threads. The number of threads
+should be accepted via command line. Of the number provided, half
+(rounded off to less if the number is odd) should do the following
+continuously:
+
+  * Poll a string variable at random intervals (less than 2 seconds with
+    granularity of approximately microseconds) to see if it contains a
+    positive value.
+
+The remaining threads should do the following:
+
+  * sleep for random intervals
+  * Once awake, write its own name in the string
+
+The program should run continuously, terminating only when someone
+presses Ctrl+C at the terminal.

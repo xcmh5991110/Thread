@@ -1,0 +1,6 @@
+Compile and build an executable file:
+	gcc -o thread thread.c -lpthread
+
+Run with an argument
+
+	./thread no_of_thread (should be less than 10. You can increase it by changing its value in program.)
